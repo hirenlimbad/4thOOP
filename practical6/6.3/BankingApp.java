@@ -7,23 +7,23 @@ import java.util.Scanner;
 class BankingApp{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Tamara khatama 5000 chhe.");
-        int amount = 5000;
+        System.out.println("You have 1000.");
+        int amount = 1000;
 
         try{
 
             while (true){
-                System.out.print("upado thodak money: ");
+                System.out.print("Withdraw Some money: ");
                 int deposit = sc.nextInt();
                 
                 if (amount-deposit >= 0){
                     amount-=deposit;
-                    System.out.println("Have "+ amount + " bachya chhe");
+                    System.out.println("Now you have "+ amount);
                 }
                 else{
-                    throw new Exception("Vikash bhaii! kaik khatama hoi toh upade.");
+                    throw new Exception("Not efficient money!");
                 }
-                System.out.print("Haju ");
+                System.out.print("Again, ");
             }
         }
         catch (Exception e){

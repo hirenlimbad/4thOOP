@@ -1,7 +1,7 @@
 
 public class test {
     static double average(String args[]) throws NullPointerException, NumberFormatException{
-        if (args == null){
+        if (args.length == 0){
             throw new NullPointerException("Null values chhe jovo toh khari.");
         }
         double result = 0;

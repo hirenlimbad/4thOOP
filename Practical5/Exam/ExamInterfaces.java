@@ -6,7 +6,5 @@ interface Exam {
 
 
 interface Classify {
-
     String division (int average);
-    
 }

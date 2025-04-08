@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CalcArea {
+public abstract class CalcArea {
     static double area(double height){
         return (height * height);
     }  
@@ -29,6 +29,4 @@ public class CalcArea {
         print(area(sc.nextDouble(), sc.nextDouble()));
 
     }
-
-    
 }
